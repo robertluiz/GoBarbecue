@@ -13,6 +13,7 @@ routes.post('/signin', SessionController.store)
 routes.get('/signup', guestMiddleware, UserController.create)
 routes.post('/signup', upload.single('avatar'), UserController.store)
 routes.use('/app', authMiddleware)
+routes.get('/app/logout', SessionController.destroy)
 routes.get('/app/dashboard', (req, res) => {
   console.log(req.session.user)
   return res.render('dashboard')
