@@ -1,0 +1,12 @@
+<script type="text/javascript">
+   document.addEventListener('DOMContentLoaded', function() {
+  {% for message in flashSuccess %}
+
+  siiimpleToast.success("{{ message }}");
+  {% endfor %}
+
+  {% for message in flashError %}
+  siiimpleToast.alert("{{ message }}");
+  {% endfor %}
+  }, false);
+</script>
