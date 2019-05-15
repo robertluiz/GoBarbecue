@@ -2,8 +2,10 @@
 <html lang="en">
 {% include "_partials/head.njk" %}
 <body>
+{% include "_partials/flash.njk" %}
   <div class="main-wrapper">
   {% block body %} {% endblock %}
   </div>
+{% include "_partials/footer.njk" %}
 </body>
 </html>
