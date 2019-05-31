@@ -11,11 +11,11 @@ module.exports = {
       date: {
         type: 'TIMESTAMP WITH TIME ZONE'
       },
-      createdAt: {
+      created_at: {
         type: 'TIMESTAMP WITH TIME ZONE',
         allowNull: false
       },
-      updatedAt: {
+      updated_at: {
         type: 'TIMESTAMP WITH TIME ZONE',
         allowNull: false
       },
@@ -29,7 +29,7 @@ module.exports = {
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       },
-      provaider_id: {
+      provider_id: {
         type: 'INTEGER',
         allowNull: true,
         references: {
